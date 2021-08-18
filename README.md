@@ -12,7 +12,7 @@ I have to:
     - CSS variables
 
 ## Link to Website
-- https://carvasquez206.github.io/A2_Portfolio/
+- 
 
 ## git commands
 - git fetch
