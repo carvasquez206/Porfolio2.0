@@ -1,0 +1,138 @@
+
+<html>
+	<head>
+	<title>Bond Web Service Demo</title>
+	<style>
+	body {font-family:georgia;}
+	
+	.film{
+		border:1px solid #E77DC2;
+		border-radius: 5px; 
+		padding: 5px;
+		margin-bottom:5px;
+		position: relative;
+	}
+	
+	.pic{
+		position:absolute;
+		right: 10px;
+		top: 10px; 
+	
+	}
+	
+	</style>
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {  
+	
+		$('.category').click(function(e){
+			e.preventDefault(); //stop default action of the link
+			cat = $(this).attr("href");  //get category from URL
+			loadAJAX(cat);  //load AJAX and parse JSON file
+		});
+	});	
+	
+	
+	function loadAJAX(cat)
+	{
+		//AJAX connection will go here
+		//alert('cat is: ' + cat);
+	
+		$.ajax({
+			type: "GET",
+			dataType: "json",
+			url: "api.php?cat=" + cat, 
+			success: bondJSON
+		}); 
+	}
+		
+	function toConsole(data)
+	{//return data to console for JSON examination
+		console.log(data); //to view,use Chrome console, ctrl + shift + j
+	}
+	
+	function bondJSON(data){
+	//JSON processing data goes here
+		//console.log(data);
+		/*
+		let myData = JSON.stringify(data,null,4);
+		myData = '<pre>' + myData + '</pre>';
+		$('#output').html(myData);
+		*/
+		let myData = JSON.stringify(data,null,4);
+		myData = '<pre>' + '</pre>';
+	
+		$('#filmtitle').html(myData.title);
+	
+		$('#films').html("");
+	
+		$.each(data.films, function(i,item){
+			let str = '';
+	
+			str += bondTemplate(item);
+	
+			$('<div></div>').html(str).appendTo('#films');
+	
+		});
+	}
+	
+	function bondTemplate(obj){
+		return `
+		<div class="film">
+				<b>Film: </b> ${obj.Film}<br />
+				<b>Title: </b> ${obj.Title}<br />
+				<b>Year: </b> ${obj.Year}<br />
+				<b>Director: </b> ${obj.Director}<br />
+				<b>Producers: </b> ${obj.Producers}<br />
+				<b>Writers: </b> ${obj.Writers}<br />
+				<b>Composer: </b> ${obj.Composer}<br />
+				<b>Bond: </b> ${obj.Bond}<br />
+				<b>Budget: </b> ${obj.Budget}<br />
+				<b>BoxOffice: </b> ${obj.BoxOffice}<br />
+				<b>Image: </b> ${obj.Image}<br />
+				<div class="pic"><img src="thumbnails/${obj.Film}" /></div>
+			</div>		
+		`;
+	}
+	
+	</script>
+	</head>
+		<body>
+		<h1>Bond Web Service</h1>
+			<a href="year" class="category">Bond Films By Year</a><br />
+			<a href="box" class="category">Bond Films By International Box Office Totals</a>
+			<h3 id="filmtitle">Title Will Go Here</h3>
+			<div id="films">
+				<p>Films will go here</p>
+			</div>
+			<div id="output">Results go here</div>
+			<!--
+				"Film": 1,
+				"Title": "Dr. No".
+				"Year": 1962,
+				"Director": "Terence Young",
+				"Producers": "Harry Saltzman and Albert R. Broccoli",
+				"Writers": "Richard Maibaum, Johanna Harwood and Berkely Mather",
+				"Composer": "Monty Norman",
+				"Bond": "Sean Connery",
+				"Budget": "$1,000,000.00",
+				"BoxOffice": "$59,567,035.00",
+				"Image": "dr-no.jpg"
+			-->
+			<div class="film">
+				<b>Film: </b> 1<br />
+				<b>Title: </b> Dr. No<br />
+				<b>Year: </b> 1962<br />
+				<b>Director: </b> Terence Young<br />
+				<b>Producers: </b> Harry Saltzman and Albert R. Broccoli<br />
+				<b>Writers: </b> Richard Maibaum, Johanna Harwood and Berkely Mather<br />
+				<b>Composer: </b> Monty Norman<br />
+				<b>Bond: </b> Sean Connery<br />
+				<b>Budget: </b> $1,000,000.00<br />
+				<b>BoxOffice: </b> $59,567,035.00<br />
+				<b>Image: </b> dr-no.jpg<br />
+				<div class="pic"><img src="thumbnails/dr-no.jpg" /></div>
+			</div>
+		</body>
+	</html>
