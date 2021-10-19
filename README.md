@@ -37,4 +37,4 @@ Your updated portfolio should:
 - https://carvasquez206.github.io/Porfolio2.0/
 
 ## Screenshot
-- https://carvasquez206.github.io/Porfolio2.0/![_Users_carlosvasquez_Desktop_Porfolio2 0_index html_name= email= msg=](https://user-images.githubusercontent.com/63617482/137867857-655040fb-4e1e-403b-893d-5aeec63018af.png)
+![_Users_carlosvasquez_Desktop_Porfolio2 0_index html_name= email= msg=](https://user-images.githubusercontent.com/63617482/137867857-655040fb-4e1e-403b-893d-5aeec63018af.png)
