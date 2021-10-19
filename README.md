@@ -1,51 +1,39 @@
 # Porfolio2.0
+This is version 2 of my portfolio. 
 
 ## Description
-It's an assingment where I'll implement Advanced CSS by creating a portfolio..again
+Your updated portfolio should:
 
-I have to: 
-- Create a portfolio
-- Add a display of projects. They can be images as placeholders
-- CSS I need to include:
-    - flexbox
-    - media queries
-    - CSS variables
+1. Display your contact information.
+
+2. Have links to your GitHub profile and LinkedIn profile
+
+3. Have a link to a downloadable PDF of your resume
+
+4. Display at least 2 examples of student work from either deployed projects or homeworks. For each project, make sure you have the following:
+
+	* Project title
+
+	* Link to the deployed version
+
+	* Link to the GitHub repository
+
+	* Screenshot of the deployed application
+
+5. Have a polished, mobile-responsive user interface.
+
+## Homework Requirements
+
+* Updated portfolio featuring Project 1 and two exemplary homework assignments.
+
+* Updated GitHub profile with pinned repositories featuring Project 1 and two exemplary assignments.
+
+* Updated resume
+
+* Updated LinkedIn profile
+
 
 ## Link to Website
 - https://carvasquez206.github.io/Porfolio2.0/
 
-## git commands
-- git fetch
-- git pull
-- git add
-- git commit -m ""
-- git commit -a
-- git push
-
-## Assignment Acceptance Citeria
-```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-```
-
 ## Screenshot
-![carvasquez206 github io_Porfolio2 0_ (2)](https://user-images.githubusercontent.com/63617482/129983948-3a88bd53-e102-4562-b817-9742e8a58a14.png)
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
