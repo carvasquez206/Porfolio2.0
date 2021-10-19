@@ -61,15 +61,15 @@
     opacity: .8;
 }
 
-.main {
+/*.main {
     display: flex;
     flex-direction: column;
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     align-items: center;
     position: absolute;
     top:30%;
     right: 10%;
-}
+}*/
 
 .headings {
     font-family: century;
@@ -81,17 +81,19 @@
 .btn {
     padding: 10px 35px;
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
     outline: none;
     transition: .6s ease;
+    border-radius: 15px;
 }
 
 .btn:hover {
     cursor: pointer;
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 5px white 0 0 10px white, 0 0 15px white;
+    background-color: rgb(255,45,45);
+    border:transparent;
+    color: white;
+    box-shadow: 0 0  20px rgb(255,45,45);
     font-weight: bold;
 }
 
