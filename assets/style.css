@@ -5,7 +5,7 @@
 
 }
 
-/*Navbar*/
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@
     box-shadow: 0 0 10px;
 }
 
-/*Home Section*/
+/* Home Section */
 #home {
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@
     font-weight: bold;
 }
 
-/*About Section*/
+/* About Section */
 #about {
     display: flex;
     flex-direction: column;
@@ -125,7 +125,7 @@
     margin-bottom: 20px;
 }
 
-/*Porfolio Section*/
+/* Porfolio Section */
 #porfolio {
     display: flex;
     flex-direction: column;
@@ -148,4 +148,17 @@
     margin: 10px
 }
 
-/**/
+/* Services Section*/
+#services {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+}
