@@ -9,18 +9,18 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
     
     <section id="home">
         <div class="main">
-            <h1>I Am <br> Carlos Vasquez</h1>
-            <button class="btn">Github</button>
+            <h1>Carlos Vasquez</h1>
+            <a href="https://github.com/carvasquez206"><button class="btn">Github</button></a>
         </div>
     </section>
 
@@ -57,6 +57,20 @@
                     sed assumenda pariatur tempora voluptates odio veniam qui quos 
                     aspernatur iure expedita reiciendis.
                 </p>
+                <br>
+                <ul>
+                    <li>
+                        <p>
+                            Github
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Resume
+                        </p>
+                    </li>
+                </ul>
+        
             </div>
 
         </div>
@@ -116,10 +130,14 @@
 
     <section id="contact">
         <h1 class="headings">CONTACT</h1>
-        <form>
-            <input type="text" name="name" class="input" 
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter 
+            Your Name">
+            <input type="email" name="email" class="input" 
             placeholder="Enter Your Email">
-            <textarea name="msg" id="" cols="30" rows="10"></textarea>
+            <textarea name="msg" id="msg" cols="30" rows="10" 
+            placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
         </form>
     </section>
 
