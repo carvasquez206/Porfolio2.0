@@ -32,7 +32,8 @@ Your updated portfolio should:
 
 * Updated LinkedIn profile
 
-
+## Link to Github Repository
+- https://github.com/carvasquez206
 ## Link to Website
 - https://carvasquez206.github.io/Porfolio2.0/
 
